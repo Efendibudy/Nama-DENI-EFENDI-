@@ -1,0 +1,23 @@
+// Nama :Deni Efendi 
+// kelas : D3 TME 4C
+
+// Inisialisasi pin LED built-in
+const int ledPin = LED_BUILTIN;
+
+// Fungsi setup akan dijalankan sekali, saat papan dihidupkan atau direset
+void setup() {
+  // Atur pin LED sebagai output
+  pinMode(ledPin, OUTPUT);
+}
+
+// Fungsi loop akan berjalan berulang kali selamanya
+void loop() {
+  // Nyalakan LED
+  digitalWrite(ledPin, HIGH);
+  // Tunggu selama 1000 milidetik (1 detik)
+  delay(1000);
+  // Matikan LED
+  digitalWrite(ledPin, LOW);
+  // Tunggu selama 1000 milidetik (1 detik)
+  delay(1000);
+}
